@@ -99,7 +99,7 @@ https://developer.okta.com/blog/2017/09/06/build-a-cryptocurrency-comparison-sit
     </b-card>
 
     <b-card class="text-center">
-      <h1 v-if ="addExpense >=0">You are currently spending {{totalExpense}} dollars!</h1>
+      <h1 v-if ="addExpense >=0">You currently have {{totalExpense}} dollars!</h1>
       <!-- The Math.abs function returns the absolute value that is -->
       <h1 v-else>You currently owe {{Math.abs(totalExpense)}} dollars!</h1>
       <p v-if="warning === 1"> You should be more mindful of your spending habits </p>
