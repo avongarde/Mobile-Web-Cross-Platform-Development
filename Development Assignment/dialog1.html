@@ -23,7 +23,7 @@ https://developer.okta.com/blog/2017/09/06/build-a-cryptocurrency-comparison-sit
   <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
 
   <!-- Required scripts -->
-  <!--script src="https://unpkg.com/vue"></script-->
+  <script src="https://unpkg.com/vue"></script>
 
   <!--Vue.js link-->
   <script type="text/javascript" src="js/vue.js"></script>
@@ -35,9 +35,9 @@ https://developer.okta.com/blog/2017/09/06/build-a-cryptocurrency-comparison-sit
 <body>
 
   <!-- Our application root element which contains all bootstrap-Vue elements -->
-  <div id="app" style="background-color:FF5733">
+  <div id="app" style="background-color:#FF5733;">
 
-    <h2 style="font-size:10vw">Simple Expense Tracker<b-badge>V-0.02</b-badge></h2>
+    <h2>Simple Expense Tracker<b-badge>V-0.02</b-badge></h2>
 
     <b-modal v-model="modalShow">
       New Entry!<br>
@@ -51,11 +51,15 @@ https://developer.okta.com/blog/2017/09/06/build-a-cryptocurrency-comparison-sit
 
         <b-tab title="Expense Entry">
 
-          Enter an expense: <b-form-input v-model="text1" type="text" placeholder="Name"></b-form-input>
+          Enter an expense: <b-form-input v-model="text1"
+          type="text"
+          placeholder="Name"></b-form-input>
 
-          Enter a cost: <b-form-input v-model="text2" type="text" placeholder="Cost"></b-form-input>
+          Enter a cost: <b-form-input v-model="text2"
+          type="text"
+          placeholder="Cost"></b-form-input>
 
-          <b-button size="lg" variant="danger" @click="addExpense" style="background-color: white">
+          <b-button size="lg" variant="danger" @click="addExpense" style="background-color: black">
             Add New Expense!
           </b-button>
 
@@ -65,13 +69,13 @@ https://developer.okta.com/blog/2017/09/06/build-a-cryptocurrency-comparison-sit
 
           Enter an income source: <b-form-input v-model="text1"
                             type="text"
-                            placeholder="Input 1 goes here"></b-form-input>
+                            placeholder="Name"></b-form-input>
 
           Enter an amount: <b-form-input v-model="text2"
                         type="text"
-                        placeholder="Input 2 goes here"></b-form-input>
+                        placeholder="Cost"></b-form-input>
 
-          <b-button :size="lg" :variant="success" @click="addIncome" style="background-color: white">
+          <b-button size="lg" variant="success" @click="addIncome" style="background-color: black">
               Add New Income!
           </b-button>
 
