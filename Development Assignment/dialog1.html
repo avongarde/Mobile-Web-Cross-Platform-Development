@@ -159,20 +159,20 @@ https://developer.okta.com/blog/2017/09/06/build-a-cryptocurrency-comparison-sit
           this.text1 = ""
           this.text2 = ""
           this.tabIndex = 2;
-          this.addExpense += parseInt(amount)
+          this.totalExpense += parseInt(amount)
 
 
-          if(this.addExpense < 0) {
+          if(this.totalExpense < 0) {
             this.warning = 1;
           }
 
-          if (this.addExpense < -500) {
+          if (this.totalExpense < -500) {
             this.warning = 2;
 
             alert("You are operating at a loss, you should cease spending immediately")
           }
 
-          if (this.addExpense > 0) {
+          if (this.totalExpense > 0) {
             this.warning = 0;
           }
         },
@@ -192,20 +192,20 @@ https://developer.okta.com/blog/2017/09/06/build-a-cryptocurrency-comparison-sit
           this.text1 = ""
           this.text2 = ""
           this.tabIndex = 2;
-          this.addExpense += parseInt(amount)
+          this.totalExpense += parseInt(amount)
 
 
-          if(this.addExpense < 0) {
+          if(this.totalExpense < 0) {
             this.warning = 1;
           }
 
-          if (this.addExpense < -500) {
+          if (this.totalExpense < -500) {
             this.warning = 2;
 
             alert("You are operating at a loss, you should cease spending immediately")
           }
 
-          if (this.addExpense > 0) {
+          if (this.totalExpense > 0) {
             this.warning = 0;
           }
         }
